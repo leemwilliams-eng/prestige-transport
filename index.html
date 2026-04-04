@@ -590,6 +590,50 @@
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
+    /* ── PRICING TABLE ─────────────────────────────────── */
+    .pricing-section { margin-top: 4rem; }
+    .pricing-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      margin-top: 2rem;
+    }
+    .pricing-section h3:first-child { margin-top: 0; }
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .pricing-table th {
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+    .pricing-table td {
+      border: 1px solid var(--border);
+      padding: 0.9rem 1rem;
+      font-size: 0.9rem;
+      color: var(--white);
+    }
+    .pricing-table tr:hover { background: rgba(201, 168, 76, 0.05); }
+
+    .pricing-footnote {
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
     /* ── MOBILE ────────────────────────────────────────── */
     @media (max-width: 900px) {
       nav { padding: 1.2rem 1.5rem; }
@@ -743,8 +787,8 @@
       <div class="why-img">
         <!-- ▶ SWAP with a second vehicle or action photo -->
         <img
-          src="https://images.pexels.com/photos/2056075/pexels-photo-2056075.jpeg?auto=compress&cs=tinysrgb&w=900"
-          alt="Black SUV at night"
+          src="prestige-transport-interior.jpg"
+          alt="Premium Chevy Tahoe interior — Prestige Transport"
         />
       </div>
     </div>
@@ -792,6 +836,79 @@
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       </div>
 
+    </div>
+
+    <!-- PRICING TABLE -->
+    <div class="pricing-section reveal" style="margin-top: 4rem;">
+      <h3>Pricing</h3>
+
+      <!-- Packages & Flat Rates -->
+      <h4 style="margin-top: 2rem; color: var(--gold); font-size: 1.1rem;">Packages & Flat Rates</h4>
+      <table class="pricing-table">
+        <tr>
+          <th>Service</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td>Thunder Games</td>
+          <td>$250</td>
+        </tr>
+        <tr>
+          <td>OU/OSU Football Games</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Concerts</td>
+          <td>$100/hour*</td>
+        </tr>
+      </table>
+      <p style="font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem;">* Plus wait time, mileage, and beverages</p>
+
+      <!-- Airport Transfers -->
+      <h4 style="margin-top: 2rem; color: var(--gold); font-size: 1.1rem;">Airport Transfers</h4>
+      <table class="pricing-table">
+        <tr>
+          <th>Distance</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td>0–15 miles</td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>15–30 miles</td>
+          <td>$80</td>
+        </tr>
+        <tr>
+          <td>Over 30 miles</td>
+          <td>$100</td>
+        </tr>
+      </table>
+
+      <!-- Point-to-Point Rides -->
+      <h4 style="margin-top: 2rem; color: var(--gold); font-size: 1.1rem;">Point-to-Point Rides</h4>
+      <table class="pricing-table">
+        <tr>
+          <th>Distance</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td>0–15 miles</td>
+          <td>$45</td>
+        </tr>
+        <tr>
+          <td>15–30 miles</td>
+          <td>$65</td>
+        </tr>
+        <tr>
+          <td>Over 30 miles</td>
+          <td>$80</td>
+        </tr>
+      </table>
+
+      <div class="pricing-footnote">
+        * 20% gratuity is customary
+      </div>
     </div>
   </div>
 </section>
